@@ -1,0 +1,148 @@
+#tableApprendre tr th:nth-child(2),
+#tableApprendre tr td:nth-child(2) {
+    width: 30%;
+}
+
+#tableApprendre tr th:nth-child(3),
+#tableApprendre tr td:nth-child(3) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableApprendre tr:hover {
+    cursor: pointer;
+    background-color: rgba(224, 209, 163, 0.733);
+}
+
+.tableModalApprendre tr th:not(:first-child),
+.tableModalApprendre tr td:not(:first-child) {
+    text-align: center;
+    width: 13%;
+}
+
+.tableModalApprendre tr th,
+.tableModalApprendre tr td {
+    padding: 4px;
+}
+
+.tableModalApprendre tr td:not(:first-child):not(.posteIndisponible):not(.posteOccupe):not(.posteChoisi):hover {
+    background-color: rgb(185, 191, 238);
+    cursor: pointer;
+}
+
+#viewApprendreModal>.form1>p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#viewApprendreModal>.form1>p:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+#viewApprendreModal>.form1>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#viewApprendreModal>.form1>.info {
+    width: 100%;
+}
+
+#viewApprendreModal>.form1>.dateInterval>p,
+#viewApprendreModal>.form1>.prevNext>p {
+    width: 45%;
+}
+
+#viewApprendreModal>div .cout,
+#viewApprendreModal>div .langue,
+#viewApprendreModal>div .domaine {
+    width: 29%;
+}
+
+#viewApprendreModal>div .description,
+#viewApprendreModal>div .professour {
+    width: 100%;
+}
+
+.posteIndisponible {
+    cursor: default;
+    background-color: lightgray;
+}
+
+.posteOccupe {
+    cursor: default;
+    background-color: rgb(247, 37, 37);
+}
+
+.posteChoisi {
+    cursor: pointer;
+    background-color: rgb(88, 184, 69);
+}
+
+.posteChoisi:hover {
+    background-color: rgb(136, 187, 126);
+}
+
+.prevNext>p {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prevNext>p:hover {
+    color: rgb(185, 191, 238);
+}
+
+.prevNext[value="0"]>p:first-child {
+    color: gray;
+    pointer-events: none;
+}
+
+.dateInterval {
+    font-size: large;
+    font-weight: bold;
+}
+
+#tableBackApprendre {
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+
+#formSelectionApprendre>div:first-of-type {
+    max-width: calc(100% + 60px);
+    min-width: calc(100% + 60px);
+}
+
+#formSelectionApprendre .titleForm {
+    width: calc(100%) !important;
+    margin: 0;
+}
+
+#formSelectionApprendre {
+    top: 7%;
+    min-height: 84%;
+    max-height: 84%;
+    min-width: 45%;
+}
+
+#formSelectionApprendre p:not(#formSelectionApprendre p.titleForm) {
+    font-size: 10pt;
+}
+
+#formSelectionApprendre p span {
+    font-weight: 1000;
+    color: teal;
+}
+
+#formSelectionApprendre table tr {
+    font-size: 1.4vh;
+}
+
+#formSelectionApprendre table tr td:first-of-type {
+    background-color: rgb(185, 191, 238);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}

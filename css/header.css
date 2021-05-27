@@ -1,0 +1,67 @@
+#navbar {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 100;
+    line-height: 100px;
+    top: 0;
+}
+
+#banner>img {
+    width: 100%;
+    filter: blur(2px);
+    opacity: 80%;
+}
+
+#navbar>a:first-of-type {
+    color: teal;
+    margin: 0 20px;
+    padding: 0;
+    float: left;
+    font-size: 30px;
+}
+
+#navbar>a {
+    cursor: pointer;
+    color: teal;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    transition: 0.2s;
+    border-radius: 5px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#navbar>a:hover {
+    color: black;
+    background-color: rgba(0, 128, 128, 0.6);
+}
+
+#navbar>a:last-of-type {
+    margin-right: 20px;
+}
+
+#navbar>a:first-of-type:hover {
+    color: teal;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#shadowNavbar {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 80;
+}
+
+#logoHeader {
+    height: 100px;
+}
+
+#logoHeader > img {
+    width: 100px;
+}
